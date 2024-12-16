@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bundle-container {
+  width: 450px;
+  text-align: center;
+}
+
+/* Header */
+.bundle-header {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Radio Buttons and Labels */
+input[type="radio"] {
+  display: none;
+}
+
+.option-label {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + .option-label {
+  border-color: green;
+  background-color: #f7f7f7;
+}
+
+/* Pair Info Styling */
+.pair-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.pair-title {
+  font-weight: bold;
+}
+
+.most-popular {
+  color: green;
+  font-size: 14px;
+}
+
+.pair-discount {
+  font-weight: bold;
+  color: black;
+}
+
+/* Pair Fields Styling */
+.pair-fields {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pair-fields label {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Total Section */
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.shipping-info {
+  color: green;
+}
+
+.total-price strong {
+  color: black;
+}
+
+/* Button Styling */
+.add-to-cart {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #666;
+  text-align-last: right;
+}
